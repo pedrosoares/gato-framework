@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  rustapache:
+    build: .
+    volumes:
+      - ./target/debug:/var/www/html/:z
+      - ./storage:/var/www/html/storage/:z
+    ports:
+      - '80:80'
