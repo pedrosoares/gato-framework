@@ -9,6 +9,6 @@ pub fn boot(service_provider: &mut ServiceProvider) -> () {
 
     SimpleRouter::get("/", &IndexController::index);
     SimpleRouter::patch("/", &IndexController::index);
-    SimpleRouter::get("/{id}/casa", &IndexController::index);
-    SimpleRouter::get("/{id}/teste", &IndexController::teste);
+    SimpleRouter::get("/{id}/home", &IndexController::index);
+    SimpleRouter::get("/{id}/test", &IndexController::test);
 }

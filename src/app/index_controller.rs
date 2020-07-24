@@ -9,8 +9,8 @@ impl IndexController {
         return Response::json(json!(params));
     }
 
-    pub fn teste(request: &Request) -> Response {
-        Logger::info("IndexController[teste]");
+    pub fn test(request: &Request) -> Response {
+        Logger::info("IndexController[test]");
         let id = request.get("id", "");
         return Response::new(id.as_str());
     }
