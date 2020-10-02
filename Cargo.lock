@@ -19,18 +19,18 @@ dependencies = [
 
 [[package]]
 name = "gato-apache-cgi"
-version = "0.1.0"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "825c70fb73c6ff2d380403cb87bddaa639f71911a4caf0c23d3f3fd39ad9c1ae"
+checksum = "c5df9c2e7606ec071da98364b628f864005a483c3ac2d387595d4d3753c50001"
 dependencies = [
  "gato-core",
 ]
 
 [[package]]
 name = "gato-core"
-version = "0.1.0"
+version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a521435d87beb26c9db66f0581b10ee479eb365d0875225e28a420362d107dc3"
+checksum = "3719719908ca013135a8f7158c3cd1493d0a89263124b946d2559a0407050acc"
 dependencies = [
  "chrono",
  "lazy_static",
@@ -40,9 +40,9 @@ dependencies = [
 
 [[package]]
 name = "gato-simple-router"
-version = "0.1.0"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c45cd0d2143be3270f7a26701179f84b0c00453fa5cc12a9fdfc4fe4d2a39363"
+checksum = "37425cdce4778d68cf94951349976e4f304bb54be678177965e5da11babf0c70"
 dependencies = [
  "gato-core",
  "serde_json",
