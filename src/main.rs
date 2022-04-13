@@ -1,10 +1,11 @@
-pub mod app;
-pub mod config;
+mod bootstrap;
+pub mod domains;
 
-use config::Bootstrap;
 use gato_core::kernel::Application;
 
 fn main() {
-    let mut application = Application::new(std::env::args(), &Bootstrap::boot);
+    // Create a new Application and pass the execution arguments
+    let mut application = Application::new(std::env::args(), &bootstrap::boot);
+    // run the application
     application.run();
 }
